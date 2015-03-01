@@ -1,0 +1,12 @@
+# Site settings
+title: Arron Hartley
+email: arronhartley@gmail.com
+description: > # this means to ignore newlines until "baseurl:"
+    Arron Hartley is a software developer living in London.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://www.arronhartley.com" # the base hostname & protocol for your site
+twitter_username: arr0n7
+github_username:  arron-h
+
+# Build settings
+markdown: kramdown

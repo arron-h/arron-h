@@ -1,0 +1,38 @@
+---
+layout: default
+---
+<div id="header">
+	<h1>
+		Hello. My name is <strong>Arron Hartley</strong> and I'm a <strong>Software Engineer</strong> living in 
+		<strong>London, UK</strong>.
+	</h1>
+</div>
+
+<div id="content">
+	<h2>What I do</h2>
+	<p>
+		I'm a computer programmer currently working for an international Internet-based retailer in London.
+		Previously I worked for a small indie video game company doing pretty much everything
+		except washing the pots and a large computer graphics IP company in the south of England.
+	</p>
+	<h2>What I like</h2>
+	<ul>
+		<li><a href="http://www.crazyguyonabike.com/directory/?user=BaronArron" title="Crazyguyonabike.com">Read</a> my cycling journals.</li>
+		<li><a href="http://www.flickr.com/photos/arronhartley/" title="Flickr">View</a> my photography.</li>
+		<li><a href="https://github.com/arron-h">Checkout</a> my code.</li>
+	</ul>
+</div>
+
+<div id="home">
+	<h2>Blog Posts</h2>
+	<ul class="posts">
+		{% for post in site.posts %}
+			<li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+		{% endfor %}
+	</ul>
+</div>
+
+<div id="content">
+	<h2>How I look, sometimes</h2>
+	<img src="images/me.jpg" alt="It's me on a big-ass rock!" class="img centre"/>
+</div>

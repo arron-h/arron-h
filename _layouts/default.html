@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<head>
+	<meta charset="utf-8" />
+
+	<title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+
+	<meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}" />
+
+	<link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}" />
+	<link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" />
+	<link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
+	
+	<link href='http://fonts.googleapis.com/css?family=Alegreya|Alegreya+SC:700' rel='stylesheet' type='text/css'/>
+</head>
+<body>
+
+<div class="site">
+
+  {{ content }}
+
+  <div class="footer">
+    <div class="contact">
+      <p>
+        Arron Hartley
+      </p>
+    </div>
+    <div class="contact">
+      <p>
+        <a href="http://github.com/arron-h/">github.com/arron-h</a><br />
+        <a href="http://twitter.com/arr0n7/">twitter.com/arr0n7</a><br />
+      </p>
+    </div>
+    <div class="rss">
+<!--    <a href="http://feeds.feedburner.com/arron-hartley">
+			<img src="/images/rss.png" alt="Subscribe to RSS Feed" />
+		</a> -->
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
